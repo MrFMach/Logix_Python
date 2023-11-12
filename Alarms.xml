@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alarms version="1.0" product="{E44CB020-C21D-11D3-8A3F-0010A4EF3494}" id="Alarms">
+    <alarm history-size="128" capacity-high-warning="90" capacity-high-high-warning="99" display-name="[ALARM]" hold-time="250" max-update-rate="1,00" embedded-server-update-rate="1,00" silence-tag="" remote-silence-exp="" remote-ack-all-exp="" status-reset-tag="" remote-status-reset-exp="" close-display-tag="" remote-close-display-exp="" use-alarm-identifier="false" capacity-high-warning-tag="" capacity-high-high-warning-tag="" capacity-overrun-tag="" remote-clear-history-exp="">
+        <triggers>
+            <trigger id="T1" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]ALARM_0.1}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label1" handshake-tag=""/>
+            <trigger id="T2" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]ALARM_0.2}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label2" handshake-tag=""/>
+            <trigger id="T3" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]ALARM_0.3}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label3" handshake-tag=""/>
+            <trigger id="T4" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]ALARM_0.4}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label4" handshake-tag=""/>
+            <trigger id="T5" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]LOG_1}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label5" handshake-tag=""/>
+            <trigger id="T6" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]LOG_2}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label6" handshake-tag=""/>
+            <trigger id="T7" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]LOG_3}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label7" handshake-tag=""/>
+            <trigger id="T8" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]LOG_4}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label8" handshake-tag=""/>
+            <trigger id="T9" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]ALARM_0.5}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label9" handshake-tag=""/>
+            <trigger id="T10" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]ALARM_0.6}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label10" handshake-tag=""/>
+            <trigger id="T11" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]LOG_5}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label11" handshake-tag=""/>
+            <trigger id="T12" type="value" ack-all-value="0" use-ack-all="false" ack-tag="" exp="{[PLC]ALARM_0.7}" message-tag="" message-handshake-exp="" message-notification-tag="" remote-ack-exp="" remote-ack-handshake-tag="" label="Label12" handshake-tag=""/>
+        </triggers>
+        <messages>
+            <message id="M1" trigger-value="1" identifier="1" trigger="#T1" backcolor="#000000" forecolor="#FFFFFF" audio="false" display="true" print="false" message-to-tag="false" text="Falha de rede no drive principal"/>
+            <message id="M2" trigger-value="1" identifier="2" trigger="#T2" backcolor="#000000" forecolor="#FFFFFF" audio="false" display="true" print="false" message-to-tag="false" text="Falha de segurança"/>
+            <message id="M3" trigger-value="1" identifier="3" trigger="#T3" backcolor="#000000" forecolor="#FFFFFF" audio="false" display="true" print="false" message-to-tag="false" text="Falha na alimentação 24 Vdc"/>
+            <message id="M4" trigger-value="1" identifier="4" trigger="#T4" backcolor="#000000" forecolor="#FFFFFF" audio="false" display="true" print="false" message-to-tag="false" text="Sobrecarga no drive secundário"/>
+            <message id="M5" trigger-value="1" identifier="5" trigger="#T5" backcolor="#000000" forecolor="#FFFFFF" audio="false" display="false" print="false" message-to-tag="false" text="Velocidade alterada pelo operador 011"/>
+            <message id="M6" trigger-value="1" identifier="6" trigger="#T6" backcolor="#000000" forecolor="#FFFFFF" audio="false" display="false" print="false" message-to-tag="false" text="Botão iniciar pressionado"/>
+            <message id="M7" trigger-value="1" identifier="7" trigger="#T7" backcolor="#000000" forecolor="#FFFFFF" audio="false" display="false" print="false" message-to-tag="false" text="Botão parar pressionado"/>
+            <message id="M8" trigger-value="1" identifier="8" trigger="#T8" backcolor="#000000" forecolor="#FFFFFF" audio="false" display="false" print="false" message-to-tag="false" text="Logon realizado do usuário 002"/>
+            <message id="M9" trigger-value="1" identifier="9" trigger="#T9" backcolor="#800000" forecolor="#FFFFFF" audio="false" display="true" print="false" message-to-tag="false" text="Falha no sensor de nível"/>
+            <message id="M10" trigger-value="1" identifier="10" trigger="#T10" backcolor="#800000" forecolor="#FFFFFF" audio="false" display="true" print="false" message-to-tag="false" text="Falha na válvula de vapor"/>
+            <message id="M11" trigger-value="1" identifier="11" trigger="#T11" backcolor="#800000" forecolor="#FFFFFF" audio="false" display="false" print="false" message-to-tag="false" text="Logoff realizado pelo operador 002"/>
+            <message id="M12" trigger-value="1" identifier="12" trigger="#T12" backcolor="#800000" forecolor="#FFFFFF" audio="false" display="true" print="false" message-to-tag="false" text="Falha de rede no drive secundário"/>
+        </messages>
+    </alarm>
+</alarms>
